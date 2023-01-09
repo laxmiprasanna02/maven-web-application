@@ -18,5 +18,3 @@ jobs:
            shell: bash
    goodbye:
       runs-on: ubuntu-latest
-      steps: 
-         -name: bye-world
