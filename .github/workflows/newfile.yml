@@ -1,7 +1,7 @@
 name: hello world work flow
 on:
    push:
-      branches::
+      branches:
          - main
    pull_request:
       branches:
@@ -9,14 +9,14 @@ on:
    workflow_dispach:
    
 jobs:
-   hello
+   hello:
       runs-on: ubuntu-latest
       steps:
          - users: actions/checkout@v2
          - name: hello-world
            run: echo "hello world 1234"
            shell: bash
-   goodbye
+   goodbye:
       runs-on: ubuntu-latest
       steps: 
          -name: bye-world
