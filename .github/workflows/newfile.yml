@@ -16,5 +16,3 @@ jobs:
          - name: hello-world
            run: echo "hello world 1234"
            shell: bash
-   goodbye:
-      runs-on: ubuntu-latest
