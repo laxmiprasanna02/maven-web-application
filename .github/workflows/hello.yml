@@ -40,7 +40,7 @@ jobs:
   #       context: .
  #        file: Dockerfile
      #    push: true
-     #    tags: ${{ secrets.DOCKERHUB_USERNAME }}/laxmi:1234
+     #    tags: ${{ secrets.DOCKERHUB_USERNAME }}/laxmi:123
           
         
       #    shell: bash 
