@@ -17,16 +17,16 @@ jobs:
           java-version: 1.8
       - name: java version
         run: java -version
- #    - name: maven installation
-#       run: | 
- #           sudo apt install maven -y
-  #          sudo mkdir maven
-    #        cd maven
+      - name: maven installation
+        run: | 
+             sudo apt install maven -y
+             sudo mkdir maven
+             cd maven
      #       sudo git clone https://github.com/krishnapuppala97/maven-web-application.git 
-      #      pwd |ls -l
-     #       cd maven-web-application
-     #       sudo mvn clean package install
-      #      docker build . --file Dockerfile -t laxm:1 
+             
+             cd maven-web-application
+             sudo mvn clean package install
+             docker build . --file Dockerfile -t laxm:1 
              
  #    - name: Login to Docker Hub
  #      uses: docker/login-action@v2
