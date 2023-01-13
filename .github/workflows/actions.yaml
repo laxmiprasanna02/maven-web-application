@@ -1,8 +1,28 @@
-name: first github actions
 on:
   push:
     branches:
       - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+jobs:
+  maven:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: install java
+        uses: actions/setup-java@v3
+        with:
+          java-version: '8'
+          distribution: 'adopt'
+      - name: maven installation
+        run:  sudo apt install maven -y
+      - name: build artifact
+        run: |
+              cd maven-web-application
+              sudo mvn clean package install
+    
     
     
       
