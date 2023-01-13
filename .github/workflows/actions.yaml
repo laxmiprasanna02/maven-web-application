@@ -16,12 +16,8 @@ jobs:
         with:
           java-version: '8'
           distribution: 'adopt'
-      - name: maven installation
-        run:  sudo apt install maven -y
-      - name: build artifact
-        run: |
-              cd maven-web-application
-              sudo mvn clean package install
+      - name: Build with Maven
+        run: mvn --batch-mode --update-snapshots package
     
     
     
