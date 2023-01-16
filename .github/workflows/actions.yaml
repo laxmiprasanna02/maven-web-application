@@ -54,14 +54,7 @@ jobs:
          container-name: my-container
          image: ${{ steps.build-image.outputs.image }}
 
-      - name: Deploy Amazon ECS task definition
-        uses: aws-actions/amazon-ecs-deploy-task-definition@v1
-        with:
-         task-definition: ${{ steps.cgafrica-new-backend-task.outputs.task-definition }}
-         service: my-service
-         cluster: my-cluster
-         wait-for-service-stability: true 
-
+      
          
        
     
