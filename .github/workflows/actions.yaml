@@ -62,11 +62,11 @@ jobs:
          #service: my-service
          #cluster: my-cluster
          #wait-for-service-stability: true
-      - name: create a terraform 
+      - name: create a terraform
         run: |
              cd terraform
              terraform init
-             terraform apply --auto-approve 
+             terraform destroy --auto-approve
       
          
        
