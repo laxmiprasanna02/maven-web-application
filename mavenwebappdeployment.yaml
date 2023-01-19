@@ -18,9 +18,9 @@ spec:
     spec:
       containers:
         - name: mavenwebappcontainer
-          image: krishnapuppala97/maven-web-application:7
+          image: nginx
           ports:
-            - containerPort: 8080
+            - containerPort: 80
           resources:
             requests:
               cpu: 200m
@@ -39,4 +39,4 @@ spec:
   type: NodePort
   ports:
   - port: 80
-    targetPort: 8080
+    targetPort: 80
