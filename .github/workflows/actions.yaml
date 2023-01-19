@@ -81,7 +81,7 @@ jobs:
          
       - name: deploy eks
         run: |
-          kubectl apply -f mavenwebappdeployment.yaml
+          kubectl apply -f rollingupdate.yaml
           pwd
           ls -ll
           
