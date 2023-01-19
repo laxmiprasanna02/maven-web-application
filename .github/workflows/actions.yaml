@@ -83,7 +83,7 @@ jobs:
         run: |
           kubectl apply -f mavenwebappdeployment.yaml
           pwd
-          ls -la
+          ls -ll
           
       
       
