@@ -4,6 +4,9 @@ metadata:
   name: mavenwebappdeployment
 spec:
   replicas: 2
+  selector:
+    matchLabels:
+      app: mavenwebapp
   strategy:
     rollingUpdate:
       maxSurge: 1
