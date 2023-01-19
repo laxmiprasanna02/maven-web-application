@@ -74,10 +74,16 @@ jobs:
           version: 'v1.24.0'
         id: install
       - name: aws configure
-        run: aws eks update-kubeconfig --name devopsthehardway-cluster --region us-east-1
+        run: |
+          aws eks update-kubeconfig --name devopsthehardway-cluster --region us-east-1
+          pwd
+          ls -la
+         
       - name: deploy eks
         run: |
           kubectl apply -f mavenwebappdeployment.yaml
+          pwd
+          ls -la
           
       
       
