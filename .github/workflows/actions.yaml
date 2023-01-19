@@ -78,7 +78,7 @@ jobs:
       - name: deploy eks
         run: |
           kubectl apply -f mavenwebappdeployment.yaml
-          kubectl get pods -all
+          kubectl get pods --all
       
       
         
