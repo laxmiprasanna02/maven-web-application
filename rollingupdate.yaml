@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: mavenwebapp
-        image: 915316342843.dkr.ecr.us-east-1.amazonaws.com/repositoryforgithub:latest
+        image: nginx
         ports:
         - containerPort: 8080
 
